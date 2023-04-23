@@ -1,12 +1,19 @@
 import Metadata from '@components/Metadata';
+import About from 'container/AboutUs';
+import Chef from 'container/Chef';
+import Header from 'container/Header';
 import LayoutContainer from 'container/LayoutContainer';
+import SpecialMenu from 'container/SpecialMenu';
 
 export default function Home() {
   return (
     <>
       <Metadata title="Confetti" />
       <LayoutContainer>
-        <h1 className="text-red-600 font-alt">Heloo</h1>
+        <Header />
+        <About />
+        <SpecialMenu />
+        <Chef />
       </LayoutContainer>
     </>
   );

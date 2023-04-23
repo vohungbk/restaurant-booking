@@ -1,7 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@layer components {
+  .p__cormorant {
+    @apply font-base text-white font-bold tracking-[0.04em] capitalize leading-7 text-[19px] md:text-[23px];
+  }
+  .p__opensans {
+    @apply font-sans text-white font-normal tracking-[0.04em] capitalize leading-7 text-[12px] sm:text-[16px];
+  }
+  .section-padding {
+    @apply py-16 px-8 sm:p-16 md:px-24;
+  }
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .app-bg {
+    @apply bg-center bg-cover bg-repeat bg-fixed bg-[url('/assets/bg.png')];
+  }
+}
+
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 * {
   box-sizing: border-box;
@@ -24,27 +43,6 @@ body {
 a {
   color: unset;
   text-decoration: none;
-}
-
-.p__cormorant {
-  font-family: 'Cormorant Upright', serif;
-  color: #ffffff;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: capitalize;
-  font-feature-settings: 'tnum' on, 'lnum' on;
-  line-height: 29.9px;
-  font-size: 23px;
-}
-
-.p__opensans {
-  font-family: 'Open Sans', sans-serif;
-  color: #ffffff;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  text-transform: capitalize;
-  line-height: 28px;
-  font-size: 16px;
 }
 
 .slide-bottom {
