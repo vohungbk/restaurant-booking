@@ -38,7 +38,7 @@ const Navbar = () => {
           className="cursor-pointer"
         />
         {toggleMenu && (
-          <div className="fixed top-0 left-0 w-full h-screen bg-black flex-col z-10 flex items-center justify-center">
+          <div className="fixed top-0 left-0 w-full h-screen bg-black flex-col z-10 flex items-center justify-center slide-bottom">
             <MdOutlineRestaurantMenu
               fontSize={27}
               className="text-golden cursor-pointer absolute top-5 right-5"

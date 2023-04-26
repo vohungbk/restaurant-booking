@@ -1,3 +1,4 @@
+import HeadText from '@components/HeadText';
 import SubHeading from '@components/SubHeading';
 import AppWrapper from '@components/Wrapper/AppWrapper';
 import WrapperInfo from '@components/Wrapper/WrapperInfo';
@@ -24,9 +25,7 @@ const Chef = () => {
 
       <WrapperInfo>
         <SubHeading title="Chef’s Word" />
-        <h1 className="font-base font-semibold text-[45px] leading-[70px] sm:text-[64px] sm:leading-[130%] capitalize text-golden">
-          What we believe in
-        </h1>
+        <HeadText text="What we believe in" />
         <div className="flex flex-col w-full mt-20">
           <div className="flex items-end justify-start">
             <div

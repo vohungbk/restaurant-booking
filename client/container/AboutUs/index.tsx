@@ -1,4 +1,5 @@
 import ButtonPrimary from '@components/Button/ButtonPrimary';
+import HeadText from '@components/HeadText';
 import Image from 'next/image';
 import React from 'react';
 import { images } from 'shared/constants';
@@ -19,9 +20,7 @@ const About = () => {
 
       <div className="flex items-center flex-col lg:flex-row z-10 w-full">
         <div className="flex-1 flex items-end justify-end flex-col text-right">
-          <h1 className="font-base font-semibold text-[45px] sm:text-[64px] leading-[130%] capitalize tracking-[0.03em] text-golden">
-            About Us
-          </h1>
+          <HeadText text="About Us" />
           <div className="w-[45px]" style={{ position: 'unset' }}>
             <Image
               src={images.spoon}
@@ -42,9 +41,7 @@ const About = () => {
           <Image src={images.knife} alt="" fill />
         </div>
         <div className="flex-1 flex items-start justify-start flex-col text-left">
-          <h1 className="font-base font-semibold text-[45px] sm:text-[64px] leading-[130%] capitalize tracking-[0.03em] text-golden">
-            Our History
-          </h1>
+          <HeadText text="Our History" />
           <div className="w-[45px]" style={{ position: 'unset' }}>
             <Image
               src={images.spoon}
